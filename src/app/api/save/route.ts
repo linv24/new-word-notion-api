@@ -22,7 +22,7 @@ export async function POST(req: NextRequest) {
             parent: { database_id: databaseId },
             properties: {
                 Word: { title: [{ text: { content: word } }] },
-                "Part Of Speech": { rich_text: [{ text: { content: partOfSpeech } }] },
+                "Part of Speech": { rich_text: [{ text: { content: partOfSpeech } }] },
                 Definition: { rich_text: [{ text: { content: definition } }] },
                 Book: { rich_text: [{ text: { content: bookTitle } }] },
             },
